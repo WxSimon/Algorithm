@@ -1,8 +1,12 @@
 package com.simon.test;
 
+import java.util.Stack;
+
 import com.simon.Metting.Singleton;
 
 public class TestClass {
+	
+	
 	//单利模式实现
 	public static void main(String[] args) {
 //		Singleton singleton_A = Singleton.Install_A();
@@ -13,7 +17,7 @@ public class TestClass {
 		for (int i = 0; i < 3; i++) {
 			MultiSingleton();
 		}
-		
+
 	}
 	//多线程下测试单利模式
 	public static void MultiSingleton(){
@@ -25,4 +29,5 @@ public class TestClass {
 		});
 		thread.start();
 	}
+	
 }

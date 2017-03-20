@@ -193,7 +193,7 @@ public class Sort {
 		//简单的冒泡排序
 		public static void bubbleSort_A(int a[]) {
 			for (int i = 0; i < a.length; i++) {
-				for (int j = 0; j < a.length - 1; j++) {
+				for (int j = 0; j < a.length-i- 1; j++) {
 					if (a[j] > a[j + 1]) {
 						Swap(a, j, j + 1);
 					}
@@ -310,7 +310,7 @@ public class Sort {
 
 		// 5.测试冒泡排序
 		// *1.
-//		BubbleSort.bubbleSort_A(a);
+		BubbleSort.bubbleSort_A(a);
 //		BubbleSort.bubbleSort_B(a);
 		
 		//6.测试快速排序
@@ -320,7 +320,7 @@ public class Sort {
 //		MergerSort.mergerSort(a, 0, a.length-1);
 		
 		System.out.println("");
-		System.out.println("****7.归并排序之后:****");
+//		System.out.println("****7.归并排序之后:****");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + ",");
 		}
