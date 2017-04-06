@@ -190,55 +190,54 @@ public class Sort {
 	 */
 	private static class BubbleSort {
 
-		//简单的冒泡排序
+		// 简单的冒泡排序
 		public static void bubbleSort_A(int a[]) {
 			for (int i = 0; i < a.length; i++) {
-				for (int j = 0; j < a.length-i- 1; j++) {
+				for (int j = 0; j < a.length - i - 1; j++) {
 					if (a[j] > a[j + 1]) {
 						Swap(a, j, j + 1);
 					}
 				}
 			}
 		}
-		
-		//改进的冒泡，添加了标记
-		public static void bubbleSort_B(int a[]){
-			int n = a.length-1;
-			while(n>0){
+
+		// 改进的冒泡，添加了标记
+		public static void bubbleSort_B(int a[]) {
+			int n = a.length - 1;
+			while (n > 0) {
 				int pos = 0;
 				for (int i = 0; i < n; i++) {
-					if(a[i]>a[i+1]){
+					if (a[i] > a[i + 1]) {
 						pos = i;
-						Swap(a, i, i+1);
+						Swap(a, i, i + 1);
 					}
 				}
 				n = pos;
 			}
 		}
 	}
-	
-	
+
 	/**
-	 * 6.快速排序
-	 * 时间复杂度:O(nlogn)
-	 * 空间复杂度:O(nlogn)
+	 * 6.快速排序 时间复杂度:O(nlogn) 空间复杂度:O(nlogn)
 	 */
 
-	private static class QuickSort{
-		public static void quickSort(int a[],int low,int high){
-			if(low<high){
-				int privotLoc = partition(a,low,high);
-				quickSort(a, low, privotLoc-1);
-				quickSort(a, privotLoc+1, high);
+	private static class QuickSort {
+		public static void quickSort(int a[], int low, int high) {
+			if (low < high) {
+				int privotLoc = partition(a, low, high);
+				quickSort(a, low, privotLoc - 1);
+				quickSort(a, privotLoc + 1, high);
 			}
 		}
-		
+
 		private static int partition(int[] a, int low, int high) {
 			int privotKey = a[low];
-			while(low<high){
-				while(low<high && a[high]>=privotKey)--high;//从后半部分向前扫描
+			while (low < high) {
+				while (low < high && a[high] >= privotKey)
+					--high;// 从后半部分向前扫描
 				a[low] = a[high];
-				while(low<high && a[low]<=privotKey)++low; //从前部分扫描
+				while (low < high && a[low] <= privotKey)
+					++low; // 从前部分扫描
 				a[high] = a[low];
 			}
 			a[high] = privotKey;
@@ -248,49 +247,48 @@ public class Sort {
 
 	/**
 	 * 7.归并排序
+	 * 
 	 * @param args
 	 */
-	private static class MergerSort{
-		
-		public static void mergerSort(int a[],int left,int right){
-			if(left>=right)return;
-			int mid = (left+right)/2;
+	private static class MergerSort {
+
+		public static void mergerSort(int a[], int left, int right) {
+			if (left >= right)
+				return;
+			int mid = (left + right) / 2;
 			mergerSort(a, left, mid);
-			mergerSort(a, mid+1, right);
-			merger(a,left,mid,right);
+			mergerSort(a, mid + 1, right);
+			merger(a, left, mid, right);
 		}
 
 		private static void merger(int[] a, int left, int mid, int right) {
 			int tempArr[] = new int[a.length];
-			int center = mid+1;
+			int center = mid + 1;
 			int third = left;
 			int tmp = left;
-			while(left<=mid && center<=right){
-				if(a[left]<=a[center]){
+			while (left <= mid && center <= right) {
+				if (a[left] <= a[center]) {
 					tempArr[third++] = a[left++];
-				}
-				else {
+				} else {
 					tempArr[third++] = a[center++];
 				}
 			}
-	        while (center <= right) {  
-	        	tempArr[third++] = a[center++];  
-	        }  
-	        while (left <= mid) {  
-	        	tempArr[third++] = a[left++];  
-	        }  
-	        // 将临时数组中的内容拷贝回原数组中  
-	        // （原left-right范围的内容被复制回原数组）  
-	        while (tmp <= right) {  
-	            a[tmp] = tempArr[tmp++];  
-	        } 
+			while (center <= right) {
+				tempArr[third++] = a[center++];
+			}
+			while (left <= mid) {
+				tempArr[third++] = a[left++];
+			}
+			// 将临时数组中的内容拷贝回原数组中
+			// （原left-right范围的内容被复制回原数组）
+			while (tmp <= right) {
+				a[tmp] = tempArr[tmp++];
+			}
 		}
 	}
-	
-	
-	
+
 	public static void main(String[] args) {
-//		 int a[] ={9,8,7,6,4,5,2,1};
+		// int a[] ={9,8,7,6,4,5,2,1};
 		int a[] = createRundom();
 		System.out.println("排序之前:");
 		for (int i = 0; i < a.length; i++) {
@@ -311,23 +309,22 @@ public class Sort {
 		// 5.测试冒泡排序
 		// *1.
 		BubbleSort.bubbleSort_A(a);
-//		BubbleSort.bubbleSort_B(a);
-		
-		//6.测试快速排序
-//		QuickSort.quickSort(a, 0, a.length-1);
-		
-		//7.测试归并排序
-//		MergerSort.mergerSort(a, 0, a.length-1);
-		
+		// BubbleSort.bubbleSort_B(a);
+
+		// 6.测试快速排序
+		// QuickSort.quickSort(a, 0, a.length-1);
+
+		// 7.测试归并排序
+		// MergerSort.mergerSort(a, 0, a.length-1);
+
 		System.out.println("");
-//		System.out.println("****7.归并排序之后:****");
+		// System.out.println("****7.归并排序之后:****");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + ",");
 		}
-		
+
 	}
-	
-	
+
 	/**
 	 * 生成随机字符串
 	 * 
@@ -350,5 +347,5 @@ public class Sort {
 		a[j] = temp;
 		return a;
 	}
-	
+
 }
