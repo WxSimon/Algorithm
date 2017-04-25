@@ -11,9 +11,10 @@ public class Fib {
 	 * f(n) ==  1  			  (n=1)
 	 * 			f(n-1)+f(n-2) (n>=2)
 	 * 
+	 * 这个算法时间复杂度是以n的指数增加
 	 */
 	public static void main(String[] args) {
-		System.out.println(fib1(14));
+		System.out.println(fib1(10));
 	}
 
 	private static int fib1(int i) {

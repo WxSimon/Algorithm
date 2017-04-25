@@ -1,6 +1,5 @@
 package DataStruture;
 
-import org.junit.Test;
 
 //链表
 public class LinkList {
