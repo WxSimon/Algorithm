@@ -5,3 +5,7 @@
 * 4.重建二叉树 ReConstructBinaryTree
 * 5.使用两个栈模拟队列 StackToQueue
 * 6.旋转数组中的最小数字 MinNumberInRotateArray
+* 7.斐波拉契算法的更优解法 Fibonacci
+* 8.求二进制中的1的个数 NumberOf1
+* 9.将技术和偶数区分开 Reorder
+* 10.查找链表中倒数k的值
