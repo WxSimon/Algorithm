@@ -8,4 +8,6 @@
 * 7.斐波拉契算法的更优解法 Fibonacci
 * 8.求二进制中的1的个数 NumberOf1
 * 9.将技术和偶数区分开 Reorder
-* 10.查找链表中倒数k的值
+* 10.查找链表中倒数k的值 FindKthToTail
+* 11.合并两个递增的有序链表 Merge
+* 12.判断一个树是不是一个的子树 HasSubtree

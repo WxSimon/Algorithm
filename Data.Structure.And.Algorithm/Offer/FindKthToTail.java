@@ -9,15 +9,15 @@ package Offer;
  * 
  */
 public class FindKthToTail {
-	public class ListNode {
+	public static class ListNode {
 		int val;
 		ListNode next = null;
 
-		ListNode(int val) {
+		public ListNode(int val) {
 			this.val = val;
 		}
 
-		ListNode() {
+		public ListNode() {
 		}
 	}
 
@@ -44,5 +44,33 @@ public class FindKthToTail {
 			}
 			return p2;
 		}
+	}
+	//将一个链表反转,记录三个位置:p1:当前节点位置 p2:当前节点前面的一个点的位置(已经反转了)  p3:当前节点后面的一个位置
+	private static ListNode flipListNode(ListNode head){
+		ListNode p1 = head;
+		ListNode p2 = null;
+		ListNode p3 = null;
+		if(head == null)return null;
+		else{
+			while(p1!=null){
+				ListNode p4 = p1.next;
+				if(p4==null)p2 = p1;
+					p1.next = p3;
+					p3 = p1;
+					p1 = p4;
+				
+			}
+			return p2;
+		}
+	}
+	public static void main(String[] args) {
+		ListNode l1 = new ListNode(1);
+		ListNode l2 = new ListNode(2);
+		ListNode l3 = new ListNode(3);
+		ListNode l4 = new ListNode(4);
+		l1.next = l2;
+		l2.next = l3;
+		l3.next = l4;
+		flipListNode(l1);
 	}
 }
