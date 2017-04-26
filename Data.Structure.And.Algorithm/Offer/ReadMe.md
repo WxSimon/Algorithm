@@ -12,4 +12,3 @@
 * 11.合并两个递增的有序链表 **Merge**
 * 12.判断一个树是不是一个的子树 **HasSubtree**
 * 13.二叉树的镜像 **MirrorRecursively**
-* sadas
