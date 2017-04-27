@@ -16,3 +16,4 @@
 * 15.包含min函数的栈 **StackWithMin**
 * 16.栈的压入，弹出序列 **IsPopOrder**
 * 17.从上往下打印二叉树 **PrintFromTopToBottom**
+* 18.二叉搜索树的后序遍历 **VerifySquenceOfBST**
