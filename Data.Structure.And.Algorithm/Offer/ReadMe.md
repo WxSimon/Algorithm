@@ -12,4 +12,7 @@
 * 11.合并两个递增的有序链表 **Merge**
 * 12.判断一个树是不是一个的子树 **HasSubtree**
 * 13.二叉树的镜像 **MirrorRecursively**
-* 14.顺时针打印一个矩阵
+* 14.顺时针打印一个矩阵 **PrintMatrixClockwisely**
+* 15.包含min函数的栈 **StackWithMin**
+* 16.栈的压入，弹出序列 **IsPopOrder**
+* 17.从上往下打印二叉树 **PrintFromTopToBottom**
