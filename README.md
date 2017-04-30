@@ -348,6 +348,7 @@ private static class BubbleSort {
     * 然后接着对这两部分进行相同的操作，直到序列有序
 * 时间复杂度：O(nlogn)
 * 空间复杂度: O(nlogn)
+
 <h3 id="快速排序代码">快速排序代码</h3>
 ``` java
 private static class QuickSort{
