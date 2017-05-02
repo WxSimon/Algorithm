@@ -341,6 +341,7 @@ private static class BubbleSort {
 		}
 	}
 ```
+
 <h2 id="快速排序">6.快速排序</h2>
 * 思路：
     * 选择一个基准元素
@@ -350,6 +351,7 @@ private static class BubbleSort {
 * 空间复杂度: O(nlogn)
 
 <h3 id="快速排序代码">快速排序代码</h3>
+
 ``` java
 private static class QuickSort{
 		public static void quickSort(int a[],int low,int high){
