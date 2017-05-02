@@ -219,7 +219,8 @@ public static void selectSort(int a[]) {
    * 输出堆顶元素之后如何调整剩下的n-1个元素，使之成为新的堆
 * 时间复杂度:O(nlogn)
 
-<h3 id="堆排序代码">代码实现:</h3>
+<h3 id="堆排序代码">代码实现:</h3>  
+
 ``` java
 private static class HeapSort {
 		public HeapSort(int a[]) {
@@ -231,7 +232,6 @@ private static class HeapSort {
 				System.out.print(a[i] + ",");
 			}
 		}
-
 		// 构建初始最大堆
 		// 假设长度为8 那么
 		// 第一个父节点就是a[3] 左结点为:a[7]
