@@ -17,3 +17,9 @@
 * 16.栈的压入，弹出序列 **IsPopOrder**
 * 17.从上往下打印二叉树 **PrintFromTopToBottom**
 * 18.二叉搜索树的后序遍历 **VerifySquenceOfBST**
+* 19.超过数组一半的数字 **MoreThanHalfNum**
+* 20.找到最大的目的数组 **FindGreatesSumOfSubArray**
+* 21.出现1的次数 **NumberOf1BetWeenAndN**
+* 22.整数的N次方 **Power**
+* 23.打印可拼接的最小数 **PrintMinNumber**
+* 24.获得最小的k个数 **GetLeastNumbers**
