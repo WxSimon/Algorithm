@@ -313,7 +313,8 @@ private static class HeapSort {
 * 思路：就是不断的两两比较
 * 时间复杂度:O(n^2)
 
-<h3 id="冒泡排序代码">代码实现</h3>
+<h3 id="冒泡排序代码">代码实现</h3>   
+
 ``` java
 private static class BubbleSort {
 
@@ -345,7 +346,8 @@ private static class BubbleSort {
 	}
 ```
 
-<h2 id="快速排序">6.快速排序</h2>
+<h2 id="快速排序">6.快速排序</h2>   
+
 * 思路：
     * 选择一个基准元素
     * 通过一次快排序将待排序数分为两个部分，一部分比基准数小，一部分比基准数大
