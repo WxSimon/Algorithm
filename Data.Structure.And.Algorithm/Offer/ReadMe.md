@@ -23,3 +23,4 @@
 * 22.整数的N次方 **Power**
 * 23.打印可拼接的最小数 **PrintMinNumber**
 * 24.获得最小的k个数 **GetLeastNumbers**
+* 25.找到两个链表的公共节点 **FindFirstCommonNode**
