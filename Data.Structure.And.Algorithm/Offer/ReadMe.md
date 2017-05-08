@@ -29,3 +29,4 @@
 * 28.翻转一个字符串中的所有字符 **ReverseSentence**
 * 29.左移一个字符串 **LeftRotateString**
 * 30.求n个骰子出现的值的概率 **PrintProbability**
+* 31.机器人运动范围 **MovingCount**
