@@ -24,3 +24,5 @@
 * 23.打印可拼接的最小数 **PrintMinNumber**
 * 24.获得最小的k个数 **GetLeastNumbers**
 * 25.找到两个链表的公共节点 **FindFirstCommonNode**
+* 26.递增数组中和为S的两个数 **FindNumbersWithSum**
+* 27.和为S的所有连续整数 **FindContinuousSequence**
