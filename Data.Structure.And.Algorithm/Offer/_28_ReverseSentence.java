@@ -5,13 +5,13 @@ import java.util.List;
 
 /**
  * 翻转一个字符串中所有字符
- * 示例:I am a Student 翻转为 Student a am I
+ * 示例:I am a Student 翻转为  Student a am I
  * @author Wang
  * reverse all worlds in a character string
  * example: String: I am a Student Result: Student  a am i
  * ***Thinking:
  * 			  * First Method is reverse all chars,and then reveres worlds one more
- *  		  * Two Method is save worlds in List,and then reverse the list,so this's method is easy
+ *  		  * Second Method is save worlds in List,and then reverse the list,so this's method is easy
  *
  */
 public class _28_ReverseSentence {
@@ -76,6 +76,7 @@ public class _28_ReverseSentence {
 			StringBuffer sb = new StringBuffer();
 			char[] ch = str.toCharArray();
 			int p =0;
+			//save all worlds into list
 			for (int i = 0; i < ch.length; i++) {
 				if(ch[i]==' '){
 					String s1 = str.substring(p, i);
@@ -88,6 +89,7 @@ public class _28_ReverseSentence {
 					p=i+1;
 				}
 			}
+			//reverse all worlds
 			for (int i = list1.size()-1; i >=0; i--) {
 				if(i!=0){
 					str1 = str1+ list1.get(i)+" ";
