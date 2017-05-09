@@ -30,3 +30,5 @@
 * 29.左移一个字符串 **LeftRotateString**
 * 30.求n个骰子出现的值的概率 **PrintProbability**
 * 31.机器人运动范围 **MovingCount**
+* 32.求一个窗口中的最大值 **MaxInWindows**
+* 33.二叉树的序列化和反序列化 **SerializeAndDeserialize**
