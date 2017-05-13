@@ -32,7 +32,7 @@ public class _31_MovingCount {
 		if(check(threshold,rows,cols,i,j,visited)){
 			visited[i*cols+j] = true;
 			count = 1+
-					//上下左右
+					//上下左右判断机器人的行走是否可行
 					movingCountCore(threshold, rows, cols, i-1, j, visited)+
 					movingCountCore(threshold, rows, cols, i, j-1, visited)+
 					movingCountCore(threshold, rows, cols, i+1, j, visited)+
@@ -44,7 +44,7 @@ public class _31_MovingCount {
 	private static boolean check(int threshold, int rows, int cols, int i,
 			int j, boolean[] visited) {
 		//我错误就错在没有一个存放当前坐标是否可以走的数组
-		if(i>=0 && j>=0 && i<rows && j<cols && getDigitSum(i)+getDigitSum(j)<=threshold && !visited[i*cols+1]){
+		if(i>=0 && j>=0 && i<rows && j<cols && getDigitSum(i)+getDigitSum(j)<=threshold && !visited[i*cols+j]){
 			return true;
 		}
 		return false;
@@ -61,7 +61,7 @@ public class _31_MovingCount {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(movingCount(5, 10, 10));
+		System.out.println(movingCount(15, 1, 100));
 	}
 
 	
