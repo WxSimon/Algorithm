@@ -8,6 +8,9 @@ public class StringMethod {
 //	StringBuffer  代码同步，线程安全，适用于多线程的操作
 //	StringBuilder 代码不同步，线程不安全
 //	String
+	
+//  finally 里面的代码实在try/catch return之前执行的
+	
 	private static void testString() {
 		String a = "abc";
 		String b = new String("abc");
