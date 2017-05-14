@@ -32,3 +32,4 @@
 * 31.机器人运动范围 **MovingCount**
 * 32.求一个窗口中的最大值 **MaxInWindows**
 * 33.二叉树的序列化和反序列化 **SerializeAndDeserialize**
+* 34.按层打印二叉树 **PrintTreeByTier**
