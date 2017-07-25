@@ -1,5 +1,5 @@
 ## 排序算法总结（上）
- ![](https://img.shields.io/badge/license-MIT_License-blue.svg)  ![](https://img.shields.io/badge/language-@java-green.svg)    ![](https://img.shields.io/badge/version-@1.0-blue.svg)  ![](https://img.shields.io/badge/authod-@simon-red.svg)  [![](https://img.shields.io/badge/blog-@simon-yellow.svg)](http://simoncode.top)
+  [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]()  [![](https://img.shields.io/badge/language-@java-green.svg)]()    [![](https://img.shields.io/badge/version-@1.0-blue.svg)]()  [![](https://img.shields.io/badge/authod-@simon-red.svg)](mailto:simon_code@163.com)  [![](https://img.shields.io/badge/blog-@simon-yellow.svg)](http://simoncode.top)
 
 
 
