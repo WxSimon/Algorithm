@@ -1,35 +1,40 @@
-Ëã·¨´ó²¿·Ö¶¼ÊÇ¡¶½£Ö¸Offer¡·ÖĞµÄ±à³ÌÌâÄ¿
-* 1.ÓĞĞò¶şÎ¬Êı×éµÄ²éÕÒ **QueryTwoArray**
-* 2.¿Õ¸ñÌæ»» **ReplaceSpace**
-* 3.ÊäÈëÒ»¸öÁ´±í£¬´ÓÎ²µ½Í·´òÓ¡Á´±íÃ¿¸ö½ÚµãµÄÖµ **PrintListFromTailToHead**
-* 4.ÖØ½¨¶ş²æÊ÷ **ReConstructBinaryTree**
-* 5.Ê¹ÓÃÁ½¸öÕ»Ä£Äâ¶ÓÁĞ **StackToQueue**
-* 6.Ğı×ªÊı×éÖĞµÄ×îĞ¡Êı×Ö **MinNumberInRotateArray**
-* 7.ì³²¨À­ÆõËã·¨µÄ¸üÓÅ½â·¨ **Fibonacci**
-* 8.Çó¶ş½øÖÆÖĞµÄ1µÄ¸öÊı **NumberOf1**
-* 9.½«¼¼ÊõºÍÅ¼ÊıÇø·Ö¿ª **Reorder**
-* 10.²éÕÒÁ´±íÖĞµ¹ÊıkµÄÖµ **FindKthToTail**
-* 11.ºÏ²¢Á½¸öµİÔöµÄÓĞĞòÁ´±í **Merge**
-* 12.ÅĞ¶ÏÒ»¸öÊ÷ÊÇ²»ÊÇÒ»¸öµÄ×ÓÊ÷ **HasSubtree**
-* 13.¶ş²æÊ÷µÄ¾µÏñ **MirrorRecursively**
-* 14.Ë³Ê±Õë´òÓ¡Ò»¸ö¾ØÕó **PrintMatrixClockwisely**
-* 15.°üº¬minº¯ÊıµÄÕ» **StackWithMin**
-* 16.Õ»µÄÑ¹Èë£¬µ¯³öĞòÁĞ **IsPopOrder**
-* 17.´ÓÉÏÍùÏÂ´òÓ¡¶ş²æÊ÷ **PrintFromTopToBottom**
-* 18.¶ş²æËÑË÷Ê÷µÄºóĞò±éÀú **VerifySquenceOfBST**
-* 19.³¬¹ıÊı×éÒ»°ëµÄÊı×Ö **MoreThanHalfNum**
-* 20.ÕÒµ½×î´óµÄÄ¿µÄÊı×é **FindGreatesSumOfSubArray**
-* 21.³öÏÖ1µÄ´ÎÊı **NumberOf1BetWeenAndN**
-* 22.ÕûÊıµÄN´Î·½ **Power**
-* 23.´òÓ¡¿ÉÆ´½ÓµÄ×îĞ¡Êı **PrintMinNumber**
-* 24.»ñµÃ×îĞ¡µÄk¸öÊı **GetLeastNumbers**
-* 25.ÕÒµ½Á½¸öÁ´±íµÄ¹«¹²½Úµã **FindFirstCommonNode**
-* 26.µİÔöÊı×éÖĞºÍÎªSµÄÁ½¸öÊı **FindNumbersWithSum**
-* 27.ºÍÎªSµÄËùÓĞÁ¬ĞøÕûÊı **FindContinuousSequence**
-* 28.·­×ªÒ»¸ö×Ö·û´®ÖĞµÄËùÓĞ×Ö·û **ReverseSentence**
-* 29.×óÒÆÒ»¸ö×Ö·û´® **LeftRotateString**
-* 30.Çón¸ö÷»×Ó³öÏÖµÄÖµµÄ¸ÅÂÊ **PrintProbability**
-* 31.»úÆ÷ÈËÔË¶¯·¶Î§ **MovingCount**
-* 32.ÇóÒ»¸ö´°¿ÚÖĞµÄ×î´óÖµ **MaxInWindows**
-* 33.¶ş²æÊ÷µÄĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯ **SerializeAndDeserialize**
-* 34.°´²ã´òÓ¡¶ş²æÊ÷ **PrintTreeByTier**
+# ç®—æ³•å¤§éƒ¨åˆ†éƒ½æ˜¯ã€Šå‰‘æŒ‡Offerã€‹ä¸­çš„ç¼–ç¨‹é¢˜ç›®
+
+ ![](https://img.shields.io/badge/license-MIT_License-blue.svg)  ![](https://img.shields.io/badge/language-@java-green.svg)    ![](https://img.shields.io/badge/version-@1.0-blue.svg)  ![](https://img.shields.io/badge/authod-@simon-red.svg)  [![](https://img.shields.io/badge/blog-@simon-yellow.svg)](http://simoncode.top)
+
+
+
+* 1.æœ‰åºäºŒç»´æ•°ç»„çš„æŸ¥æ‰¾ **QueryTwoArray**
+* 2.ç©ºæ ¼æ›¿æ¢ **ReplaceSpace**
+* 3.è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼Œä»å°¾åˆ°å¤´æ‰“å°é“¾è¡¨æ¯ä¸ªèŠ‚ç‚¹çš„å€¼ **PrintListFromTailToHead**
+* 4.é‡å»ºäºŒå‰æ ‘ **ReConstructBinaryTree**
+* 5.ä½¿ç”¨ä¸¤ä¸ªæ ˆæ¨¡æ‹Ÿé˜Ÿåˆ— **StackToQueue**
+* 6.æ—‹è½¬æ•°ç»„ä¸­çš„æœ€å°æ•°å­— **MinNumberInRotateArray**
+* 7.æ–æ³¢æ‹‰å¥‘ç®—æ³•çš„æ›´ä¼˜è§£æ³• **Fibonacci**
+* 8.æ±‚äºŒè¿›åˆ¶ä¸­çš„1çš„ä¸ªæ•° **NumberOf1**
+* 9.å°†æŠ€æœ¯å’Œå¶æ•°åŒºåˆ†å¼€ **Reorder**
+* 10.æŸ¥æ‰¾é“¾è¡¨ä¸­å€’æ•°kçš„å€¼ **FindKthToTail**
+* 11.åˆå¹¶ä¸¤ä¸ªé€’å¢çš„æœ‰åºé“¾è¡¨ **Merge**
+* 12.åˆ¤æ–­ä¸€ä¸ªæ ‘æ˜¯ä¸æ˜¯ä¸€ä¸ªçš„å­æ ‘ **HasSubtree**
+* 13.äºŒå‰æ ‘çš„é•œåƒ **MirrorRecursively**
+* 14.é¡ºæ—¶é’ˆæ‰“å°ä¸€ä¸ªçŸ©é˜µ **PrintMatrixClockwisely**
+* 15.åŒ…å«minå‡½æ•°çš„æ ˆ **StackWithMin**
+* 16.æ ˆçš„å‹å…¥ï¼Œå¼¹å‡ºåºåˆ— **IsPopOrder**
+* 17.ä»ä¸Šå¾€ä¸‹æ‰“å°äºŒå‰æ ‘ **PrintFromTopToBottom**
+* 18.äºŒå‰æœç´¢æ ‘çš„ååºéå† **VerifySquenceOfBST**
+* 19.è¶…è¿‡æ•°ç»„ä¸€åŠçš„æ•°å­— **MoreThanHalfNum**
+* 20.æ‰¾åˆ°æœ€å¤§çš„ç›®çš„æ•°ç»„ **FindGreatesSumOfSubArray**
+* 21.å‡ºç°1çš„æ¬¡æ•° **NumberOf1BetWeenAndN**
+* 22.æ•´æ•°çš„Næ¬¡æ–¹ **Power**
+* 23.æ‰“å°å¯æ‹¼æ¥çš„æœ€å°æ•° **PrintMinNumber**
+* 24.è·å¾—æœ€å°çš„kä¸ªæ•° **GetLeastNumbers**
+* 25.æ‰¾åˆ°ä¸¤ä¸ªé“¾è¡¨çš„å…¬å…±èŠ‚ç‚¹ **FindFirstCommonNode**
+* 26.é€’å¢æ•°ç»„ä¸­å’Œä¸ºSçš„ä¸¤ä¸ªæ•° **FindNumbersWithSum**
+* 27.å’Œä¸ºSçš„æ‰€æœ‰è¿ç»­æ•´æ•° **FindContinuousSequence**
+* 28.ç¿»è½¬ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­çš„æ‰€æœ‰å­—ç¬¦ **ReverseSentence**
+* 29.å·¦ç§»ä¸€ä¸ªå­—ç¬¦ä¸² **LeftRotateString**
+* 30.æ±‚nä¸ªéª°å­å‡ºç°çš„å€¼çš„æ¦‚ç‡ **PrintProbability**
+* 31.æœºå™¨äººè¿åŠ¨èŒƒå›´ **MovingCount**
+* 32.æ±‚ä¸€ä¸ªçª—å£ä¸­çš„æœ€å¤§å€¼ **MaxInWindows**
+* 33.äºŒå‰æ ‘çš„åºåˆ—åŒ–å’Œååºåˆ—åŒ– **SerializeAndDeserialize**
+* 34.æŒ‰å±‚æ‰“å°äºŒå‰æ ‘ **PrintTreeByTier**
