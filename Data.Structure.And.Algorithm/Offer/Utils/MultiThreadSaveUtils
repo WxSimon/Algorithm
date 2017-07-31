@@ -1,0 +1,84 @@
+package com.simon;
+
+import org.apache.poi.ss.formula.functions.T;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.List;
+
+/**
+ * Created by Simon on 2017/7/31.
+ * Description: 多线程保存数据到数据库的方法
+ */
+public class MultiThreadSaveUtils {
+    private Logger logger = LoggerFactory.getLogger(MultiThreadSaveUtils.class);
+
+    /**
+     *
+     * @param T 需要存入的对象
+     * @param session 数据库操作的session
+     * @param ThreadNum 开启线程的个数
+     */
+    public void multiThreadSave(final List<T> T, final Session session, final int ThreadNum){
+        if(T.size()<0)return;
+        final int SINGLE_NUM = (T.size())/ThreadNum;
+
+        //开启ThreadNum-1个线程
+        for (int i=0;i<ThreadNum-1;i++){
+            final int finalI = i;
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        for (int j = finalI *SINGLE_NUM+1; j< (finalI+1)*SINGLE_NUM; j++){
+                            logger.info("开始处理 :{} 个对象,当前线程: {} ,处理范围: {} - {}",j,(finalI +1),finalI*SINGLE_NUM,(finalI+1)*SINGLE_NUM);
+                            Transaction transaction = session.beginTransaction();
+                            saveMethod(j, transaction, session, T);
+                        }
+                    }catch (Exception e){
+                        logger.error("第: {} 个线程出错,错误信息: {}",finalI,e.getMessage(),e);
+                    }finally {
+                        if(session!=null){
+                            logger.info("第: {} 个线程处理完毕,关闭数据库session",finalI);
+                            session.close();
+                        }
+                    }
+                }
+            }).start();
+        }
+        //处理最后一个线程的数据
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    for (int j=(ThreadNum-1)*SINGLE_NUM+1;j<T.size();j++){
+                        logger.info("开始处理 :{} 个对象,当前线程: {} ,处理范围: {} - {}",j,(ThreadNum),(ThreadNum-1)*SINGLE_NUM,T.size());
+                        Transaction transaction = session.beginTransaction();
+                        saveMethod(j, transaction, session, T);
+                    }
+                }catch (Exception e){
+                    logger.error("第: {} 个线程出错,错误信息: {}",ThreadNum,e.getMessage(),e);
+                }finally {
+                    if(session!=null){
+                        logger.info("第: {} 个线程处理完毕,关闭数据库session",ThreadNum);
+                        session.close();
+                    }
+                }
+            }
+        }).start();
+    }
+
+    private void saveMethod(int j, Transaction transaction, Session session, List<T> T) {
+        try {
+            transaction.begin();
+            session.save(T.get(j-1));
+            transaction.commit();
+            logger.info("第: {} 个对象处理完毕,已经保存到数据库中。",j);
+        }catch (Exception e){
+            transaction.rollback();
+            logger.error("对象存储失败,失败信息: {} ",e.getMessage(),e);
+        }
+    }
+}
