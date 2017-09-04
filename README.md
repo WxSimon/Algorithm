@@ -1,12 +1,6 @@
 ## 排序算法总结（上）
   [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]()  [![](https://img.shields.io/badge/language-@java-green.svg)]()    [![](https://img.shields.io/badge/version-@1.0-blue.svg)]()  [![](https://img.shields.io/badge/authod-@simon-red.svg)](mailto:simon_code@163.com)  [![](https://img.shields.io/badge/blog-@simon-yellow.svg)](http://simoncode.top)
 
-
-
-> * 首先先给自己大三下学期定下一个小目标:找到暑假实习公司。  
-> * 因为看了很多学长学姐写的面试经验，觉得数据结构和算法是必问的内容。想想自己对这方面的脑容量为零。   
-> * 所以在正式面试之前好好恶补一下！！！
-
 ### 1.直接插入算法
 * 思路： 默认前面的数据全部都是<b>已经排好</b>的，然后依次将后面的数据插入
 
